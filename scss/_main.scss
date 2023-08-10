@@ -1,0 +1,598 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  /* 先套用 Noto Sans TC 這個 思源黑體 */
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+  
+
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrap{
+    max-width: 1920px;
+}
+
+// banner (開頭)
+
+.banner{
+    background: $bg-1;
+
+.home-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 312px;
+    @include mob{
+        padding-right: 36px;
+    }
+
+
+    }
+
+    img{
+        width: 80px;
+        height: 48.57px;
+        object-fit: cover;
+    }
+    ul{
+        display: flex;
+    }
+    a{
+        color: white;
+        padding-left: 64px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+}
+
+.home{
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+
+
+// homepage-header (no.1)
+
+
+.homepage-header {
+    max-width: 100%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png);
+    background-size: cover;
+    background-position: center;
+
+
+    
+    .home-contain {
+        margin: 0 auto;
+        padding-bottom: 296px;
+    }
+
+    .home-title {
+        text-align: right;
+        padding-top: 296px;
+        padding-right: 312px;
+        @include mob{
+            padding-right: 36px;
+        }
+
+    h3{
+        color: $text-color;
+        font-size: 36px;
+        height: 54px;
+        @include mob{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+    }
+    h2{
+        color: $text-color;
+        font-size: 64px;
+        height: 96px;
+        font-weight: bold;
+    }
+    .home-button{
+        width: 80px;
+        background: $bg-1;
+        color: #fff;
+        text-decoration: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    }
+}
+
+
+// info (no.2)
+
+
+.info{
+    background: $bg-2;
+    .info-contain{
+        margin: 0 auto;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 312px;
+        padding-left: 312px;
+        @include mob{
+            padding-right: 36px;
+            padding-left: 36px;
+        }
+
+
+    }
+    .info-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 80px;
+        
+    }
+    .info-box2{
+        padding-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        
+    }
+    ul{
+        display: flex;
+        text-align: center;
+        @include mob{
+            width: 376px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+    }
+
+    li{
+        padding-left: 24px;
+    }
+
+    h1{
+    color:$text-color;
+    font-size: $font-l;
+    font-weight: 700px;
+    padding-top: 80px;
+    padding-bottom: 24px;
+    font-weight: bold;
+    
+
+    }
+    h2{
+    color:$text-color;
+    font-size: $font-m; 
+    padding-bottom: 16px;    
+    padding-top: 16px;   
+    }
+    p{
+    font-size: $font-s;  
+    line-height: 1.5;
+    text-align: left;
+    }
+}
+
+
+// pic (no.3)
+
+
+.pic{
+    .pic-contain{
+         margin: 0 auto;
+         padding-right: 312px;
+         padding-left: 312px;
+         @include mob{
+            padding-right: 36px;
+            padding-left: 36px;
+        }
+    }
+    .pic-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 80px;
+
+    }
+    .pic-box2{
+        padding-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        img{
+            width: 416px;
+            object-fit: cover;
+        }
+    }
+    ul{
+        display: flex;
+        text-align: center;
+        @include mob{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    li{
+        padding-left: 24px;
+    }
+
+
+    h1{
+    color:$text-color;
+    font-size: $font-l;
+    font-weight: 700px;
+    padding-top: 80px;
+    padding-bottom: 24px;
+    font-weight: bold;
+
+
+    }
+    h2{
+    color:$bg-1;
+    font-size: $font-l; 
+    padding-bottom: 16px;    
+    padding-top: 8px;   
+    font-weight: bold;
+    }
+}
+
+
+// co-work (no.4)
+
+
+.cowork{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png);
+    background-size: cover;
+    background-position: center;
+}
+.cowork-contaner {
+    margin: 0 auto;
+    padding-right: 312px;
+    padding-left: 312px;
+    @include mob{
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+
+}
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .cowork-title{
+        color: #fff;
+        font-size: $font-l;
+        text-align: center;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 48px;
+    }
+    .cowork-list{
+        display: flex;
+        padding-right: 312px;
+        padding-left: 312px;
+        justify-content: center;
+        @include mob{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        img{
+            height: 240px;
+            object-fit: cover;
+        }
+
+        ul{
+            justify-content: center;
+            align-items: center;
+    }
+        h2{
+            background: #fff;
+            color: $bg-1;
+            font-size: $font-l;
+            text-align: center;
+            margin-bottom: 80px;
+            font-weight: bold;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            
+        }
+    }
+
+
+// guest (no.5)
+
+
+.guest-contain{
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 312px;
+    padding-left: 312px;
+    @include mob{
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+    .guest-title{
+        h1{
+            color: $text-color;
+            font-size: $font-l;
+            padding-top: 80px;
+            padding-bottom: 48px;
+        }
+    }
+    .guest-list{
+        padding-bottom: 80px;
+
+
+        ul{
+            display: flex;
+            @include mob{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        }   
+        li{
+            padding-left: 24px;
+        }
+        img{
+            width: 306px;
+            object-fit: cover;
+
+        }
+        .g-info{
+            width: 306px;
+            border: 1px solid #DEE2E6;
+            font-size: $font-s;
+            padding: 16px;
+            .name{
+                padding-bottom: 48px;
+                p{
+                    padding-top: 8px;
+                    line-height: 1.5;
+                }
+            }
+            .date{
+                font-size: 14px;
+                color: #707070;
+            }
+        }
+    }
+}
+
+
+// respon (no.6)
+
+
+.respon{
+    background: $bg-2;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .res-contain{
+        margin: 0 auto;
+        justify-content: center;
+        padding-right: 312px;
+        padding-left: 312px;
+
+        @include mob{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-right: 96px;
+            padding-left: 96px;
+        }
+
+    .res-title{   
+         h1{
+            color: $text-color;
+            font-size: $font-l;
+            padding-top: 80px;
+            padding-bottom: 48px;
+            display: grid;
+            place-items: center;
+        }
+
+        }
+    .res-info{
+        font-size: 20px;
+        padding-bottom: 24px;
+        line-height: 1.5;
+    }
+
+    .res-form{
+        span{
+            font-size: $font-s;
+            display: block;
+            padding-bottom: 8px;
+        }
+        li{
+            padding-bottom: 16px;
+        }
+        
+    .f-neme, .f-mail, .f-phone, .f-other {
+        input{
+            width: 100%;
+            height: 36px;
+            background:$bg-2;
+            margin-top: 8px;
+            padding: 6px 12px;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+    textarea{
+            resize: none;
+            margin-top: 8px;
+            height: 136px;
+            width: 100%;
+            background: transparent;
+            border: 1px solid black;
+        }
+    .f-check{
+        input{
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+
+
+
+    }
+
+    }
+
+
+    
+
+
+
+
+    }
+}
+
+.bt{
+    background-color: #aa0601;
+    color: white;
+    border: none;
+    width: 416px;
+    height: 56px;
+    font-size: $font-s;
+
+}
+
+.res-button{
+    width: 100%;
+    padding-bottom: 80px;
+    padding-top: 48px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+
+// footer (no.7)
+
+
+footer{
+    background:$bg-1;
+}
+.f-contain{
+    margin: 0 auto;
+    padding-right: 312px;
+    padding-left: 312px;
+    @include mob{
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+}
+    .f-box2{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        img{
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+        }
+    }
+    .f-box3{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+        color: white;
+        font-size: $font-s;
+        a{
+            color: white;
+            text-decoration: none;
+            padding-left: 48px;
+            font-size: 14px;
+        }
+        ul{
+            display: flex;
+        }
+
+    }
+
+.f-box{
+    @include mob{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.f-info-list, .f-info-logo, .f-p{
+    display: flex;
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: $font-s;
+        padding-right: 48px;
+        padding-top: 60px;
+        padding-bottom: 36px;
+    }
+    @include mob{
+        flex-wrap: wrap;
+        justify-content: center;
+        a{
+            padding-right: 16px;
+            padding-top: 48px;
+        }
+    }
+}
+
+.f-contactus{
+    span{
+        color: #fff;
+        padding-left: 16px;
+        font-size: 36px;
+    }
+}
+
+.f-check{
+    display: flex;
+}
+
+circle{
+    fill:white
+}
+
+.custom-hr {
+    width: 100%; /* 設置寬度為25% */
+    border: none; /* 移除默認的分隔線樣式 */
+    border-top: 1px solid white; /* 添加自定義的分隔線樣式 */
+    padding-bottom: 32px;
+  }
+
+
+

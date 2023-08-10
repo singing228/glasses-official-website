@@ -1,0 +1,7 @@
+
+@mixin mob {
+    @media (max-width: 768px) {
+      @content; /* 這裡放置 mixin 的內容 */
+    }
+  }
+
