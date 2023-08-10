@@ -69,10 +69,6 @@ body {
   height: auto;
 }
 
-.wrap {
-  max-width: 1920px;
-}
-
 .banner {
   background: #aa0601;
 }
@@ -264,6 +260,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
+}
+
+.info-list img {
+  width: 83px;
+  height: 83px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pic .pic-contain {
